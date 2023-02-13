@@ -1,6 +1,32 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "reset/reset.scss";
-@import "variables/variables.scss";
-@import "typography/typography.scss";
-@import "layout/layout";
+@use "../../node_modules/bootstrap/scss/bootstrap";
+@use "./reset";
+@use "./layout";
+@use "./typography";
+@use "./variables" as *;
+
+.card-text,.card-body {
+    background: $border-color;
+}
+
+nav {
+    color: $primary-color;
+}
+
+aside {
+    border: $border-color;
+}
+
+@media screen and (min-width:$tablet) {
+    .card {
+        width: 80%
+    
+    }
+ }
+
+
+@media screen and (min-width:$desktop) { 
+    .cards {
+        justify-content: center;
+    }
+}
