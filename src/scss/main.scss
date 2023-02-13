@@ -16,3 +16,17 @@ nav {
 aside {
     border: $border-color;
 }
+
+@media screen and (min-width:$tablet) {
+    .card {
+        width: 80%
+    
+    }
+ }
+
+
+@media screen and (min-width:$desktop) { 
+    .cards {
+        justify-content: center;
+    }
+}
