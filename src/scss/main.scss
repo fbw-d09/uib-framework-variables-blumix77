@@ -5,30 +5,14 @@
 @use "./typography";
 @use "./variables" as *;
 
-
-.card {
-background-color: $secondary-color;
-border: $border-size $secondary-color;
-} 
-
-.aside {
-    border: $border-size $secondary-color;
+.card-text,.card-body {
+    background: $border-color;
 }
 
-.card {
-    @media screen {
-        @tablet {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
+nav {
+    color: $primary-color;
 }
 
-.card {
-    @media screen {
-        @desktop {
-            display: flex;
-            justify-content: space-around;
-        }
-    }
-} 
+aside {
+    border: $border-color;
+}

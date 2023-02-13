@@ -37,6 +37,11 @@ footer {
   a {
     color: white;
   }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
  @media screen and (min-width: $tablet) {

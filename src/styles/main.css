@@ -10808,6 +10808,11 @@ footer {
 footer a {
   color: white;
 }
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
 
 @media screen and (min-width: 768px) {
   .card {
@@ -10867,31 +10872,16 @@ article {
   font-family: "Franklin Gothic Medium";
 }
 
-.card {
-  background-color: #e0ddb2;
-  border: 2px #e0ddb2;
+.card-text, .card-body {
+  background: #dad6ab;
 }
 
-.aside {
-  border: 2px #e0ddb2;
+nav {
+  color: #016690;
 }
 
-@media screen {
-  @tablet {
-    .card {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-}
-
-@media screen {
-  @desktop {
-    .card {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
+aside {
+  border: #dad6ab;
 }
 
 /*# sourceMappingURL=main.css.map */
